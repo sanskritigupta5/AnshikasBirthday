@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎂Anshika's Birthday</title>
+
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+       @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,700&display=swap');
+        body{
+            background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+        }
+      .first{
+        font-family: 'Allura', cursive;
+        font-size: 100px;
+        color: white;
+      }
+      .second{
+        font-family: 'Source Code Pro', monospace;
+        font-size: 80px;
+        color: bisque;
+        text-shadow: 0 10px 10px black;
+      }
+      .third{
+          font-size: 80px;
+          ;
+      }
+      .main-header{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          width: 100vw;
+          height: 100vh;
+      }
+      .btn{
+        font-size: 1.8rem;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid pink;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(218, 90, 90);
+    background-color: pink;
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="main-header">
+        <header>
+            <h1 align="center"><span class="first">Happiest  Birthdayyy</span></h1><br>
+            <h1 align="center"><span class="second">ANSHIKAAAAAAAAAAAAAAAAAAA!</span></h1> <br>
+            <h1 align="center"><span class="third">🎉🥳🎉</span></h1>
+        </header>
+        <audio controls autoplay>
+            <source src="Happy Birthday-Corrinne May.mp3" type="audio/mpeg">
+          </audio>
+          <br>
+          <a class="btn" href="/next.html">Click Here!</a>
+    </div>
+    <script src="./confetti/confetti.js"></script>
+    <script>
+         const start = () => {
+            setTimeout(function() {
+                confetti.start()
+            }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+        };
+        start();
+        
+    </script>
+</body>
+</html>
